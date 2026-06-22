@@ -1,4 +1,4 @@
-/* Основные стили страницы - на основе оригинального сайта usmanovafit.gymteam.ru */
+@import "tailwindcss";
 
 /* Локальные шрифты */
 @font-face {
@@ -26,11 +26,11 @@
 }
 
 /* Переменные для цветов и размеров */
-:root {
+@theme {
   /* Цвета */
   --color-bg: #F3F3F3;
-  --color-text: #555;
-  --color-accent: #000;
+  --color-text: #555555;
+  --color-accent: #000000;
   
   /* Шрифты */
   --font-primary: 'Gilroy', sans-serif;
@@ -60,10 +60,4 @@ body {
   font-weight: 500;
   color: var(--color-text);
   background-color: var(--color-bg);
-}
-
-/* Контейнер для контена - стили скопированы с оригинальной страницы */
-.container {
-  padding-right: var(--container-padding);
-  padding-left: var(--container-padding);
 }
