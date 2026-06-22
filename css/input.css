@@ -41,21 +41,16 @@
   /* Размеры текста */
   --font-size: 1rem;
   --line-height: 1.2;
+
+  /* Размеры иконок */
+  --icon-size: 60px;
+  --icon-size-mobile: 40px;
 }
 
 /* Кастомные утилиты */
 @utility container-padding {
   padding-left: var(--container-padding);
   padding-right: var(--container-padding);
-}
-
-/* Сброс базовых стилей */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 /* Основные стили страницы */
