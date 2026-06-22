@@ -63,3 +63,34 @@ body {
   color: var(--color-text);
   background-color: var(--color-bg);
 }
+
+/* Слайдер с scroll-snap */
+.slider-scroll {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 16px;
+}
+
+.scroll-snap-start {
+  scroll-snap-align: start;
+}
+
+/* Розовая полоса прокрутки */
+.slider-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.slider-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.slider-scroll::-webkit-scrollbar-thumb {
+  background: #FF63AE;
+  border-radius: 1px;
+}
+
+/* Firefox скроллбар */
+.slider-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #FF63AE transparent;
+}
