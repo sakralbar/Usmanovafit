@@ -43,6 +43,12 @@
   --line-height: 1.2;
 }
 
+/* Кастомные утилиты */
+@utility container-padding {
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
 /* Сброс базовых стилей */
 *,
 *::before,
