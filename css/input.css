@@ -32,13 +32,13 @@
   --color-text: #555555;
   --color-accent: #000000;
   --color-pink: #F66297;
-  
+
   /* Шрифты */
   --font-primary: 'Gilroy', sans-serif;
-  
+
   /* Размеры контейнера */
   --container-padding: 15px;
-  
+
   /* Размеры текста */
   --font-size: 1rem;
   --line-height: 1.2;
@@ -80,6 +80,11 @@ body {
   height: 6px;
 }
 
+.slider-scroll::-webkit-scrollbar-thumb {
+  background: #FF63AE;
+  border-radius: 1px;
+}
+
 .slider-scroll::-webkit-scrollbar-track {
   background: transparent;
 }
@@ -89,8 +94,7 @@ body {
   border-radius: 1px;
 }
 
-/* Firefox скроллбар */
-.slider-scroll {
-  scrollbar-width: thin;
-  scrollbar-color: #FF63AE transparent;
+/* Кнопки-стрелки — явно скрываем */
+.slider-scroll::-webkit-scrollbar-button {
+  display: none;
 }
